@@ -1,7 +1,8 @@
-package numbers
+package internal
 
 import (
-    "Library/interfaces"
+	"Library/internal/errors"
+	"Library/pkg/interfaces"
 )
 
 // Add adds two numbers.
@@ -22,7 +23,7 @@ func Mult[T interfaces.Number](a, b T) (T, error) {
 // Div divides the first number by the second.
 func Div[T interfaces.Number](a, b T) (T, error) {
     if b == 0 {
-        return 0, ErrDivisionByZero
+        return 0, errors.ErrDivisionByZero
     }
     return a / b, nil
 }
@@ -59,7 +60,7 @@ func Abs[T interfaces.Number](a T) (T, error) {
 // Fact calculates the factorial of a number.
 func Fact[T interfaces.Number](a T) (T, error) {
     if a < 0 {
-        return 0, ErrNegativeFactorial
+        return 0, errors.ErrNegativeFactorial
     }
     var result T = 1
     for i := T(1); i <= a; i++ {

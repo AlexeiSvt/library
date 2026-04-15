@@ -1,6 +1,6 @@
-package slices_sort
+package internal
 
-import "Library/interfaces"
+import  "Library/pkg/interfaces"
 
 // BubbleSort sorts a slice using the bubble sort algorithm.
 func BubbleSort[T interfaces.Number](slice []T) {

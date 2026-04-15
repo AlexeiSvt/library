@@ -29,8 +29,6 @@ go run main.go
 
 ## numbers
 
-The `numbers` package contains functions for performing various mathematical operations:
-
 - `Add`: Adds two numbers.
 - `Sub`: Subtracts one number from another.
 - `Mult`: Multiplies two numbers.
@@ -45,8 +43,6 @@ The `numbers` package contains functions for performing various mathematical ope
 
 ## strings
 
-The `strings` package contains functions for working with strings:
-
 - `Concat`: Concatenates two strings.
 - `Contains`: Checks if a string contains a substring.
 - `Count`: Counts the number of occurrences of a substring in a string.
@@ -55,18 +51,12 @@ The `strings` package contains functions for working with strings:
 - `ToLower`: Converts a string to lowercase.
 - `IsPalindrome`: Checks if a string is a palindrome.
 
-## slices_basic
-
-The `slices_basic` package contains functions for basic slice operations:
+## slices
 
 - `SumSlice`: Calculates the sum of all elements in a slice.
 - `MinSlice`: Finds the minimum element in a slice.
 - `MaxSlice`: Finds the maximum element in a slice.
 - `AvgSlice`: Calculates the average of all elements in a slice.
-
-## slices_sort
-
-The `slices_sort` package contains functions for sorting slices:
 
 - `BubbleSort`: Sorts a slice using the bubble sort algorithm.
 - `InsertionSort`: Sorts a slice using the insertion sort algorithm.

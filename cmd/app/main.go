@@ -1,6 +1,6 @@
 package main
 
-import "Library/examples"
+import "Library/internal/examples"
 
 func main() {
     examples.RunExamples()

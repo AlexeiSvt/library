@@ -1,7 +1,8 @@
-package slices_basic
+package internal
 
 import (
-	"Library/interfaces"
+    "Library/pkg/interfaces"
+	sliceError "Library/internal/errors"	
 	"errors"
 )
 
@@ -18,14 +19,13 @@ func SumSlice[T interfaces.Number](slice []T) (T, error) {
 
 }
 
-
 // MinSlice returns the minimum element of the slice 
 func MinSlice[T interfaces.Number](slice []T) (T, error) {
 
 	var min T
 
 	if len(slice) == 0 {
-		return 0, ErrEmptySlice // Return an error if the slice is empty
+		return 0, sliceError.ErrEmptySlice // Return an error if the slice is empty
 	}
 
 	min = slice[0]
@@ -46,7 +46,7 @@ func MaxSlice[T interfaces.Number](slice []T) (T, error) {
 	var max T
 
 	if len(slice) == 0 {
-		return 0, ErrEmptySlice // Return an error if the slice is empty
+		return 0, sliceError.ErrEmptySlice// Return an error if the slice is empty
 	}
 
 	max = slice[0]
