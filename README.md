@@ -1,3 +1,5 @@
+P.S. My first Project made and will be only maintained
+
 Library Project
 Version
 Current project version: v1.0.1
