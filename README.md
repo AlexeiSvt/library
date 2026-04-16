@@ -1,25 +1,20 @@
 Library Project
 Version
-Current project version: v1.0.0
+Current project version: v1.0.1
 
 Description
 This project is a set of libraries for working with numbers, strings, and slices in the Go programming language. The project implements various functions for performing mathematical operations, sorting, and working with strings.
 
 Project Structure
 main.go: The main file that runs examples of using the libraries.
-numbers: Package for working with numbers.
-strings: Package for working with strings.
-slices_basic: Package for basic slice operations.
-slices_sort: Package for sorting slices.
-interfaces: Package containing interfaces and type constraints.
 
 Installation
  
 Clone the repository:
-git clone github.com/AlexeyCodes/Library
+git clone github.com/AlexeiSvt/library
 
 Navigate to the project directory
-cd Library
+cd library
 
 Usage
 Run the examples by executing the command:
